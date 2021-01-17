@@ -158,7 +158,7 @@
         display: none;
       }
       &--list {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 84vh;
         width: 100%;
@@ -168,7 +168,8 @@
         align-items: center;
         justify-content: space-evenly;
         transform: translateX(100%);
-        transition: all 0.5s ease-in;
+        // display: none;
+        transition: 0.5s ease-in;
       }
       &--link {
         font-size: 3rem;

@@ -199,7 +199,7 @@ body {
     display: none;
   }
   .navigation__list--list {
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 84vh;
     width: 100%;
@@ -217,8 +217,8 @@ body {
             justify-content: space-evenly;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
   }
   .navigation__list--link {
     font-size: 3rem;
