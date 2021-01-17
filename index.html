@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <!-- ADD FAVICON -->
+    <link rel="icon" href="./logos/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cotton:On | Women's, Men's & Kids Clothing</title>
+  </head>
+  <header class="header">
+    <nav class="navigation">
+      <!-- CURRENCY -->
+      <div class="navigation__list navigation__list--left">
+        <ul class="navigation__list--list">
+          <li class="navigation__list--item">
+            <a href="" class="navigation__list--link">Store Finder</a>
+          </li>
+          <select
+            class="navigation__list--link navigation__list--curr"
+            name="currency"
+            id="cur-currency"
+          >
+            <option value="au">$ AU</option>
+            <option value="nz">$ NZ</option>
+            <option value="hk">$ HK</option>
+          </select>
+        </ul>
+      </div>
+
+      <!-- LOGO -->
+      <div class="navigation__logo">
+        <svg
+          class="navigation__logo--logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 674.06 85.5"
+        >
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path
+                class="cls-1"
+                d="M573,42.75c0,12.92-8.08,21.54-20.27,21.54S532.5,55.67,532.5,42.75s8.08-21.53,20.27-21.53S573,29.83,573,42.75Z"
+              />
+              <path
+                class="cls-1"
+                d="M507.22,0V85.5H674.06V0Zm45.55,78.68c-21.43,0-36.45-14.92-36.45-35.93s15-35.92,36.45-35.92,36.45,14.91,36.45,35.92S574.2,78.68,552.77,78.68Zm108.09-3a1.73,1.73,0,0,1-1.73,1.73H646.87a1.72,1.72,0,0,1-1.44-.76L618.34,36.71a1.73,1.73,0,0,0-3.17,1v38a1.74,1.74,0,0,1-1.73,1.73H601.88a1.73,1.73,0,0,1-1.73-1.73V9.82a1.72,1.72,0,0,1,1.73-1.73H615a1.72,1.72,0,0,1,1.43.76l26.26,38.69a1.73,1.73,0,0,0,3.16-1V9.82a1.73,1.73,0,0,1,1.74-1.73h11.55a1.72,1.72,0,0,1,1.73,1.73Z"
+              />
+              <path
+                class="cls-1"
+                d="M0,42.75C0,17.63,17.75,0,44.25,0c7.93,0,16,1.57,21.16,4.5A1.7,1.7,0,0,1,66.25,6V20.54A1.73,1.73,0,0,1,63.65,22a36.74,36.74,0,0,0-18-4.53c-16.37,0-26.37,9.63-26.37,25.25S29.25,68,45.62,68a36.73,36.73,0,0,0,18-4.52A1.73,1.73,0,0,1,66.25,65V79.52A1.7,1.7,0,0,1,65.41,81c-5.19,2.92-13.23,4.49-21.16,4.49C17.75,85.5,0,67.88,0,42.75Z"
+              />
+              <path
+                class="cls-1"
+                d="M75.38,42.75C75.38,17.75,93.25,0,118.75,0s43.37,17.75,43.37,42.75S144.25,85.5,118.75,85.5,75.38,67.75,75.38,42.75Zm67.5,0c0-15.37-9.63-25.62-24.13-25.62S94.62,27.38,94.62,42.75s9.63,25.63,24.13,25.63S142.88,58.13,142.88,42.75Z"
+              />
+              <path
+                class="cls-1"
+                d="M188.64,18.38H167.11a1.73,1.73,0,0,1-1.73-1.73V3.24a1.73,1.73,0,0,1,1.73-1.74h65.28a1.73,1.73,0,0,1,1.73,1.74V16.65a1.73,1.73,0,0,1-1.73,1.73H210.73A1.73,1.73,0,0,0,209,20.11V82.27A1.73,1.73,0,0,1,207.27,84H192.11a1.72,1.72,0,0,1-1.73-1.73V20.11A1.73,1.73,0,0,0,188.64,18.38Z"
+              />
+              <path
+                class="cls-1"
+                d="M263.52,18.38H242a1.73,1.73,0,0,1-1.73-1.73V3.24A1.73,1.73,0,0,1,242,1.5h65.29A1.74,1.74,0,0,1,309,3.24V16.65a1.74,1.74,0,0,1-1.73,1.73H285.61a1.73,1.73,0,0,0-1.74,1.73V82.27A1.72,1.72,0,0,1,282.14,84H267a1.72,1.72,0,0,1-1.73-1.73V20.11A1.73,1.73,0,0,0,263.52,18.38Z"
+              />
+              <path
+                class="cls-1"
+                d="M312.25,42.75c0-25,17.87-42.75,43.37-42.75S399,17.75,399,42.75,381.12,85.5,355.62,85.5,312.25,67.75,312.25,42.75Zm67.5,0c0-15.37-9.63-25.62-24.13-25.62S331.5,27.38,331.5,42.75s9.62,25.63,24.12,25.63S379.75,58.13,379.75,42.75Z"
+              />
+              <path
+                class="cls-1"
+                d="M413.73,1.5h16.1a1.74,1.74,0,0,1,1.43.76l31.95,47.08a1.73,1.73,0,0,0,3.16-1V3.24a1.74,1.74,0,0,1,1.74-1.74h14.41a1.74,1.74,0,0,1,1.73,1.74v79A1.73,1.73,0,0,1,482.52,84h-15.1a1.72,1.72,0,0,1-1.44-.76L433,34.67a1.74,1.74,0,0,0-3.17,1V82.27A1.72,1.72,0,0,1,428.14,84H413.73A1.72,1.72,0,0,1,412,82.27v-79A1.73,1.73,0,0,1,413.73,1.5Z"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <!-- LIST -->
+      <div class="navigation__list navigation__list--right">
+        <ul class="navigation__list--list">
+          <li class="navigation__list--item">
+            <a href="" class="navigation__list--link">Log In</a>
+          </li>
+          <li class="navigation__list--item">
+            <a href="" class="navigation__list--link">Basket</a>
+          </li>
+          <!-- for mobile nav -->
+          <li class="navigation__list--item nav__hide">
+            <a href="" class="navigation__list--link">Store Finder</a>
+          </li>
+          <select
+            class="navigation__list--link navigation__list--curr nav__hide"
+            name="currency"
+            id="cur-currency"
+          >
+            <option value="au">$ AU</option>
+            <option value="nz">$ NZ</option>
+            <option value="hk">$ HK</option>
+          </select>
+        </ul>
+      </div>
+
+      <div class="burger">
+        <div class="burger__line burger__line--1"></div>
+        <div class="burger__line burger__line--2"></div>
+        <div class="burger__line burger__line--3"></div>
+      </div>
+    </nav>
+
+    <!-- SUB NAV -->
+    <div class="under-nav">
+      <!-- SEARCH BAR -->
+      <form action="/" class="under-nav__search--container">
+        <input
+          class="under-nav__search--bar"
+          type="text"
+          placeholder="What are you looking for?"
+        />
+        <input
+          type="submit"
+          class="under-nav__search--submit"
+          id="under-nav__submit"
+        />
+        <label class="under-nav__search--btn" for="under-nav__submit">
+          <img
+            class="under-nav__search--btn-btn"
+            src="icons/Seach-Glass.svg"
+            alt=""
+          />
+        </label>
+      </form>
+
+      <!-- NAV LIST -->
+      <ul class="under-nav__list">
+        <li class="under-nav__list-item">
+          <a href="" class="under-nav__list--link">New In</a>
+        </li>
+        <li class="under-nav__list-item">
+          <a href="" class="under-nav__list--link">Men</a>
+        </li>
+        <li class="under-nav__list-item">
+          <a href="" class="under-nav__list--link">Women</a>
+        </li>
+        <li class="under-nav__list-item">
+          <a href="" class="under-nav__list--link">Kids</a>
+        </li>
+        <li class="under-nav__list-item">
+          <a href="" class="under-nav__list--link">More</a>
+        </li>
+        <li class="under-nav__list-item">
+          <a
+            href=""
+            class="under-nav__list--link under-nav__list--link under-nav__list--link-sale"
+            >Sale</a
+          >
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <body>
+    <!-- ARRIVALS SECTION -->
+    <section class="section-arrivals">
+      <a href="#" class="arrivals">
+        <div class="arrivals__container">
+          <h1 class="arrivals__text">
+            <span class="arrivals__text--span">Shop</span> New Arrivals
+          </h1>
+        </div>
+      </a>
+    </section>
+
+    <!-- MAIN SHOPPING SECTION -->
+    <section class="section-shop">
+      <div class="shop">
+        <!-- CARD -->
+        <a href="#" class="shop__card shop__card--men">
+          <h1 class="shop__text">
+            <span class="shop__text--span">Shop </span> Men
+          </h1>
+        </a>
+        <!-- CARD -->
+        <a href="#" class="shop__card shop__card--women">
+          <h1 class="shop__text">
+            <span class="shop__text--span">Shop</span> Women
+          </h1>
+        </a>
+        <!-- CARD -->
+        <a href="#" class="shop__card shop__card--kids">
+          <div class="shop__text">
+            <svg
+              class="shop__text--icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 429.41 181.49"
+            >
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path
+                    class="cls-1"
+                    d="M230.27,17.14c0,5.18-3.25,8.64-8.13,8.64S214,22.32,214,17.14s3.24-8.63,8.13-8.63S230.27,12,230.27,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M203.87,0V34.28h66.9V0Zm18.27,31.55c-8.59,0-14.62-6-14.62-14.41s6-14.4,14.62-14.4,14.61,6,14.61,14.4S230.73,31.55,222.14,31.55ZM265.48,31h-6L247.16,12.85V31h-6V3.24h6.32l12,17.69V3.24h6Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M.5,17.14C.5,7.07,7.61,0,18.24,0,21.6,0,25,.7,27.06,2V9.47A14.59,14.59,0,0,0,18.79,7C12.22,7,8.21,10.88,8.21,17.14s4,10.13,10.58,10.13a14.52,14.52,0,0,0,8.27-2.46v7.47c-2.06,1.3-5.46,2-8.82,2C7.61,34.28.5,27.22.5,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M30.72,17.14C30.72,7.12,37.89,0,48.11,0S65.5,7.12,65.5,17.14,58.34,34.28,48.11,34.28,30.72,27.17,30.72,17.14Zm27.06,0c0-6.16-3.85-10.27-9.67-10.27S38.44,11,38.44,17.14s3.86,10.28,9.67,10.28S57.78,23.31,57.78,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M76.83,7.37h-10V.6H94.37V7.37H84.3V33.68H76.83Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M106.85,7.37h-10V.6H124.4V7.37H114.32V33.68h-7.47Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M125.7,17.14c0-10,7.17-17.14,17.39-17.14s17.39,7.12,17.39,17.14-7.16,17.14-17.39,17.14S125.7,27.17,125.7,17.14Zm27.06,0c0-6.16-3.85-10.27-9.67-10.27s-9.67,4.11-9.67,10.27,3.86,10.28,9.67,10.28S152.76,23.31,152.76,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M165.7.6h7.51l14.29,21V.6h7.17V33.68h-7.12L172.86,12V33.68H165.7Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M4.24,49.48l20.88-1a4.45,4.45,0,0,1,4.65,4.24l1.87,39.69a4.45,4.45,0,0,0,8,2.46l35.2-47.1A4.44,4.44,0,0,1,78.21,46l24.43-1.15A4.45,4.45,0,0,1,106.41,52L64.66,107.75a4.45,4.45,0,0,0,.19,5.57l48.08,56a4.46,4.46,0,0,1-3.17,7.35L83.48,177.9a4.45,4.45,0,0,1-3.59-1.54L41.45,131.62a4.46,4.46,0,0,0-7.83,3.11l1.93,41a4.44,4.44,0,0,1-4.24,4.65l-20.87,1a4.47,4.47,0,0,1-4.66-4.24L0,54.14A4.47,4.47,0,0,1,4.24,49.48Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M142.43,46.32l20.76,2.36a4.47,4.47,0,0,1,3.92,4.93l-13.94,122.3a4.45,4.45,0,0,1-4.93,3.92l-20.76-2.36a4.46,4.46,0,0,1-3.92-4.93L137.5,50.24A4.45,4.45,0,0,1,142.43,46.32Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M187.86,53.88a4.46,4.46,0,0,1,4-4.83l40.79-3.59c45.83-4,73,17.47,76.72,59.5,3.72,42.24-19.32,68-65.14,72l-40.79,3.59a4.44,4.44,0,0,1-4.82-4Zm53.28,96.64c27.89-2.45,39.88-16.76,37.59-42.86S262.12,69.57,234.23,72l-10.31.91a4.44,4.44,0,0,0-4,4.82L226,147.39a4.44,4.44,0,0,0,4.82,4Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M323.37,160.79l2.49-18.5a4.44,4.44,0,0,1,7.15-2.91c10.14,8.05,23.3,13.39,37.2,15.26,15.26,2.06,23.55-1.07,24.81-10.38.9-6.74-2.7-11.46-16.72-16.78l-15.55-5.93c-23.23-8.77-32.19-21.68-29.47-41.9,3.65-27.15,24.54-38.47,57.25-34.07,15,2,28.28,6.73,37.09,13.13a4.4,4.4,0,0,1,1.75,4.17L426.9,81.25a4.45,4.45,0,0,1-7.09,3,70.45,70.45,0,0,0-32.55-12.83c-14.67-2-22.56,1.21-23.73,9.93-.91,6.74,3.2,10.72,17.24,15.84l16.14,6c22.87,8.53,31.23,21.36,28.41,42.37-3.84,28.54-24.09,39.54-58,35-17.57-2.36-32.76-8.09-42.33-15.61A4.45,4.45,0,0,1,323.37,160.79Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <!-- CARD -->
+        <a href="#" class="shop__card shop__card--body">
+          <div class="shop__text">
+            <svg
+              class="shop__text--icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 522.71 181.47"
+            >
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path
+                    class="cls-1"
+                    d="M230.44,17.14c0,5.18-3.24,8.64-8.13,8.64s-8.13-3.46-8.13-8.64,3.24-8.63,8.13-8.63S230.44,12,230.44,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M204,0V34.28h66.9V0Zm18.27,31.55c-8.59,0-14.62-6-14.62-14.41s6-14.4,14.62-14.4,14.62,6,14.62,14.4S230.9,31.55,222.31,31.55ZM265.65,31h-6l-12.34-18.2V31h-6V3.24h6.32l12,17.69V3.24h6Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M.66,17.14C.66,7.07,7.78,0,18.4,0c3.36,0,6.77.7,8.83,2V9.47A14.61,14.61,0,0,0,19,7C12.39,7,8.38,10.88,8.38,17.14s4,10.13,10.58,10.13a14.62,14.62,0,0,0,8.27-2.46v7.47c-2.06,1.3-5.47,2-8.83,2C7.78,34.28.66,27.22.66,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M30.88,17.14C30.88,7.12,38.05,0,48.28,0S65.67,7.12,65.67,17.14,58.5,34.28,48.28,34.28,30.88,27.17,30.88,17.14Zm27.07,0C58,11,54.09,6.87,48.28,6.87S38.6,11,38.6,17.14s3.86,10.28,9.68,10.28S58,23.31,58,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M77,7.37H67V.6H94.54V7.37H84.46V33.68H77Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M107,7.37H97V.6h27.57V7.37H114.49V33.68H107Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M125.86,17.14C125.86,7.12,133,0,143.26,0s17.39,7.12,17.39,17.14-7.17,17.14-17.39,17.14S125.86,27.17,125.86,17.14Zm27.07,0c0-6.16-3.86-10.27-9.67-10.27s-9.68,4.11-9.68,10.27,3.86,10.28,9.68,10.28S152.93,23.31,152.93,17.14Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M165.86.6h7.52l14.28,21V.6h7.17V33.68h-7.12L173,12V33.68h-7.17Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M0,50.3a3.23,3.23,0,0,1,3.23-3.23h53c28.6,0,43.4,11.4,43.4,34,0,14-5.8,23.2-17.4,27.8v.4c15.8,4.6,23.8,16,23.8,33.2,0,24-15.2,36.6-44.4,36.6H3.23A3.22,3.22,0,0,1,0,175.85Zm55.4,53.37c19.2,0,27.2-6,27.2-20.6s-8-20.4-28-20.4H20.23A3.23,3.23,0,0,0,17,65.9v34.55a3.22,3.22,0,0,0,3.23,3.22Zm3.6,59.8c21,0,29.6-6.6,29.6-22,0-15.8-9-22.2-31.6-22.2H20.23A3.23,3.23,0,0,0,17,122.5v37.75a3.22,3.22,0,0,0,3.23,3.22Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M126.2,113.07c0-40.2,28-68.4,68.4-68.4s68.4,28.2,68.4,68.4-28,68.4-68.4,68.4S126.2,153.27,126.2,113.07Zm119.4,0c0-31.2-20.6-52.6-51-52.6s-51,21.4-51,52.6,20.6,52.6,51,52.6S245.6,144.27,245.6,113.07Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M292,50.3a3.23,3.23,0,0,1,3.22-3.23H334c46,0,71.79,24,71.79,66s-25.79,66-71.79,66H295.22a3.22,3.22,0,0,1-3.22-3.22Zm41.8,113.17c35.79,0,54.59-17.4,54.59-50.4s-18.8-50.4-54.59-50.4H312.22A3.23,3.23,0,0,0,309,65.9v94.35a3.22,3.22,0,0,0,3.22,3.22Z"
+                  />
+                  <path
+                    class="cls-1"
+                    d="M475.2,121.67v54.18a3.23,3.23,0,0,1-3.23,3.22H461.42a3.22,3.22,0,0,1-3.22-3.22v-54a3.21,3.21,0,0,0-.57-1.82L411.24,52.12a3.23,3.23,0,0,1,2.67-5h12.58a3.23,3.23,0,0,1,2.67,1.41L464.33,100a3.22,3.22,0,0,0,5.33,0l35.17-51.49a3.25,3.25,0,0,1,2.67-1.41h12a3.24,3.24,0,0,1,2.67,5.06l-46.38,67.72A3.2,3.2,0,0,0,475.2,121.67Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CAROUSEL SECTION -->
+    <section class="section-carousel">
+      <h2 class="section-heading">Trending</h2>
+
+      <div class="carousel">
+        <button
+          class="carousel__button carousel__button--previous"
+          id="previous"
+        >
+          &lsaquo;
+        </button>
+        <div class="carousel__images">
+          <!-- IMAGE 1 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/buttonTank.jpg"
+                alt="Button Tank Top"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Button Tank Top
+              </h3>
+              <h3 class="carousel__images--text">$24.99</h3>
+            </a>
+          </div>
+          <!-- IMAGE 2 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/kahunaShort.jpg"
+                alt="Kahuna Short"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Kahuna Short
+              </h3>
+              <h3 class="carousel__images--text">$29.99</h3>
+            </a>
+          </div>
+          <!-- IMAGE 3 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/wovenDress.jpg"
+                alt="Woven Sandy Skater Dress"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Woven Sandy Skater Dress
+              </h3>
+              <h3 class="carousel__images--text">$29.99</h3>
+            </a>
+          </div>
+          <!-- IMAGE 4 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/sandals.jpg"
+                alt="Velcro Sporty Sandal"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Velcro Sporty Sandal
+              </h3>
+              <h3 class="carousel__images--text">$59.99</h3>
+            </a>
+          </div>
+          <!-- IMAGE 5 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/tShirt.jpg"
+                alt="Pop Culture T-Shirt"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Pop Culture T-Shirt
+              </h3>
+              <h3 class="carousel__images--text">$29.99</h3>
+            </a>
+          </div>
+          <!-- IMAGE 6 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/bikeShort.jpg"
+                alt="Ultimate Bike Short"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Ultimate Bike Short
+              </h3>
+              <h3 class="carousel__images--text">$29.99</h3>
+            </a>
+          </div>
+          <!-- IMAGE 7 -->
+          <div class="carousel__images--card">
+            <a class="carousel__images--link" href="#">
+              <img
+                class="carousel__images--img"
+                src="./img/clubhouseShort.jpg"
+                alt="Clubhouse Short"
+              />
+              <h3 class="carousel__images--text carousel__images--text-1">
+                Clubhouse Short
+              </h3>
+              <h3 class="carousel__images--text">$24.99</h3>
+            </a>
+          </div>
+        </div>
+        <button class="carousel__button carousel__button--next" id="next">
+          &rsaquo;
+        </button>
+      </div>
+    </section>
+
+    <!-- FACEMASK SECTION -->
+    <section class="section-facemask">
+      <div class="facemask__container">
+        <img
+          class="facemask__img"
+          src="./img/facemask.jpg"
+          alt="These masks are so good"
+        />
+        <div class="facemask__text">
+          <h1 class="text__heading facemask__text--heading">
+            These masks are so good.
+          </h1>
+          <p class="facemask__text--para">
+            Thanks to you, we've raised over $5M AUD to support projects that
+            keep kids healthy and in school.
+          </p>
+          <a class="facemask__text--btn" href="">Shop Now</a>
+          <a class="facemask__text--btn" href="">See The Impact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-perks">
+      <h1 class="text__heading perks__heading">
+        Join Perks and get free delivery*
+      </h1>
+      <form class="perks__form" action="/">
+        <input
+          class="perks__email"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <input class="perks__submit" type="submit" value="Join" />
+      </form>
+    </section>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/carousel.js"></script>
+  </body>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer__container">
+      <!-- Footer Nav About -->
+      <div class="footer__nav">
+        <h4 class="footer__nav--title">About Us</h4>
+        <ul class="footer__nav--list">
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">CottonOn & Co. Perks</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">The Cotton On Group</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Cotton On Careers</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Find a store</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Cotton On Foundation</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Supré Foundation</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Planet Factorie</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Foundation</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Nav Customer -->
+      <div class="footer__nav">
+        <h4 class="footer__nav--title">Customer Care</h4>
+        <ul class="footer__nav--list">
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Help & Contact Us</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Returns & Exchanges</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Delivery</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Gift Cards</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Buy Now Pay Later</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Size Guide</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">Product Recall</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Nav Brands -->
+      <div class="footer__nav">
+        <h4 class="footer__nav--title">Our Brands</h4>
+        <ul class="footer__nav--list">
+          <!-- COTTONON -->
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link">
+              <svg
+                class="footer__nav--img footer__nav--img-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 674.06 85.5"
+              >
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      class="cls-1"
+                      d="M573,42.75c0,12.92-8.08,21.54-20.27,21.54S532.5,55.67,532.5,42.75s8.08-21.53,20.27-21.53S573,29.83,573,42.75Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M507.22,0V85.5H674.06V0Zm45.55,78.68c-21.43,0-36.45-14.92-36.45-35.93s15-35.92,36.45-35.92,36.45,14.91,36.45,35.92S574.2,78.68,552.77,78.68Zm108.09-3a1.73,1.73,0,0,1-1.73,1.73H646.87a1.72,1.72,0,0,1-1.44-.76L618.34,36.71a1.73,1.73,0,0,0-3.17,1v38a1.74,1.74,0,0,1-1.73,1.73H601.88a1.73,1.73,0,0,1-1.73-1.73V9.82a1.72,1.72,0,0,1,1.73-1.73H615a1.72,1.72,0,0,1,1.43.76l26.26,38.69a1.73,1.73,0,0,0,3.16-1V9.82a1.73,1.73,0,0,1,1.74-1.73h11.55a1.72,1.72,0,0,1,1.73,1.73Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M0,42.75C0,17.63,17.75,0,44.25,0c7.93,0,16,1.57,21.16,4.5A1.7,1.7,0,0,1,66.25,6V20.54A1.73,1.73,0,0,1,63.65,22a36.74,36.74,0,0,0-18-4.53c-16.37,0-26.37,9.63-26.37,25.25S29.25,68,45.62,68a36.73,36.73,0,0,0,18-4.52A1.73,1.73,0,0,1,66.25,65V79.52A1.7,1.7,0,0,1,65.41,81c-5.19,2.92-13.23,4.49-21.16,4.49C17.75,85.5,0,67.88,0,42.75Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M75.38,42.75C75.38,17.75,93.25,0,118.75,0s43.37,17.75,43.37,42.75S144.25,85.5,118.75,85.5,75.38,67.75,75.38,42.75Zm67.5,0c0-15.37-9.63-25.62-24.13-25.62S94.62,27.38,94.62,42.75s9.63,25.63,24.13,25.63S142.88,58.13,142.88,42.75Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M188.64,18.38H167.11a1.73,1.73,0,0,1-1.73-1.73V3.24a1.73,1.73,0,0,1,1.73-1.74h65.28a1.73,1.73,0,0,1,1.73,1.74V16.65a1.73,1.73,0,0,1-1.73,1.73H210.73A1.73,1.73,0,0,0,209,20.11V82.27A1.73,1.73,0,0,1,207.27,84H192.11a1.72,1.72,0,0,1-1.73-1.73V20.11A1.73,1.73,0,0,0,188.64,18.38Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M263.52,18.38H242a1.73,1.73,0,0,1-1.73-1.73V3.24A1.73,1.73,0,0,1,242,1.5h65.29A1.74,1.74,0,0,1,309,3.24V16.65a1.74,1.74,0,0,1-1.73,1.73H285.61a1.73,1.73,0,0,0-1.74,1.73V82.27A1.72,1.72,0,0,1,282.14,84H267a1.72,1.72,0,0,1-1.73-1.73V20.11A1.73,1.73,0,0,0,263.52,18.38Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M312.25,42.75c0-25,17.87-42.75,43.37-42.75S399,17.75,399,42.75,381.12,85.5,355.62,85.5,312.25,67.75,312.25,42.75Zm67.5,0c0-15.37-9.63-25.62-24.13-25.62S331.5,27.38,331.5,42.75s9.62,25.63,24.12,25.63S379.75,58.13,379.75,42.75Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M413.73,1.5h16.1a1.74,1.74,0,0,1,1.43.76l31.95,47.08a1.73,1.73,0,0,0,3.16-1V3.24a1.74,1.74,0,0,1,1.74-1.74h14.41a1.74,1.74,0,0,1,1.73,1.74v79A1.73,1.73,0,0,1,482.52,84h-15.1a1.72,1.72,0,0,1-1.44-.76L433,34.67a1.74,1.74,0,0,0-3.17,1V82.27A1.72,1.72,0,0,1,428.14,84H413.73A1.72,1.72,0,0,1,412,82.27v-79A1.73,1.73,0,0,1,413.73,1.5Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <!-- COTTONON KIDS -->
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link"
+              ><svg
+                class="footer__nav--img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 429.41 181.49"
+              >
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      class="cls-1"
+                      d="M230.27,17.14c0,5.18-3.25,8.64-8.13,8.64S214,22.32,214,17.14s3.24-8.63,8.13-8.63S230.27,12,230.27,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M203.87,0V34.28h66.9V0Zm18.27,31.55c-8.59,0-14.62-6-14.62-14.41s6-14.4,14.62-14.4,14.61,6,14.61,14.4S230.73,31.55,222.14,31.55ZM265.48,31h-6L247.16,12.85V31h-6V3.24h6.32l12,17.69V3.24h6Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M.5,17.14C.5,7.07,7.61,0,18.24,0,21.6,0,25,.7,27.06,2V9.47A14.59,14.59,0,0,0,18.79,7C12.22,7,8.21,10.88,8.21,17.14s4,10.13,10.58,10.13a14.52,14.52,0,0,0,8.27-2.46v7.47c-2.06,1.3-5.46,2-8.82,2C7.61,34.28.5,27.22.5,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M30.72,17.14C30.72,7.12,37.89,0,48.11,0S65.5,7.12,65.5,17.14,58.34,34.28,48.11,34.28,30.72,27.17,30.72,17.14Zm27.06,0c0-6.16-3.85-10.27-9.67-10.27S38.44,11,38.44,17.14s3.86,10.28,9.67,10.28S57.78,23.31,57.78,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M76.83,7.37h-10V.6H94.37V7.37H84.3V33.68H76.83Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M106.85,7.37h-10V.6H124.4V7.37H114.32V33.68h-7.47Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M125.7,17.14c0-10,7.17-17.14,17.39-17.14s17.39,7.12,17.39,17.14-7.16,17.14-17.39,17.14S125.7,27.17,125.7,17.14Zm27.06,0c0-6.16-3.85-10.27-9.67-10.27s-9.67,4.11-9.67,10.27,3.86,10.28,9.67,10.28S152.76,23.31,152.76,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M165.7.6h7.51l14.29,21V.6h7.17V33.68h-7.12L172.86,12V33.68H165.7Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M4.24,49.48l20.88-1a4.45,4.45,0,0,1,4.65,4.24l1.87,39.69a4.45,4.45,0,0,0,8,2.46l35.2-47.1A4.44,4.44,0,0,1,78.21,46l24.43-1.15A4.45,4.45,0,0,1,106.41,52L64.66,107.75a4.45,4.45,0,0,0,.19,5.57l48.08,56a4.46,4.46,0,0,1-3.17,7.35L83.48,177.9a4.45,4.45,0,0,1-3.59-1.54L41.45,131.62a4.46,4.46,0,0,0-7.83,3.11l1.93,41a4.44,4.44,0,0,1-4.24,4.65l-20.87,1a4.47,4.47,0,0,1-4.66-4.24L0,54.14A4.47,4.47,0,0,1,4.24,49.48Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M142.43,46.32l20.76,2.36a4.47,4.47,0,0,1,3.92,4.93l-13.94,122.3a4.45,4.45,0,0,1-4.93,3.92l-20.76-2.36a4.46,4.46,0,0,1-3.92-4.93L137.5,50.24A4.45,4.45,0,0,1,142.43,46.32Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M187.86,53.88a4.46,4.46,0,0,1,4-4.83l40.79-3.59c45.83-4,73,17.47,76.72,59.5,3.72,42.24-19.32,68-65.14,72l-40.79,3.59a4.44,4.44,0,0,1-4.82-4Zm53.28,96.64c27.89-2.45,39.88-16.76,37.59-42.86S262.12,69.57,234.23,72l-10.31.91a4.44,4.44,0,0,0-4,4.82L226,147.39a4.44,4.44,0,0,0,4.82,4Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M323.37,160.79l2.49-18.5a4.44,4.44,0,0,1,7.15-2.91c10.14,8.05,23.3,13.39,37.2,15.26,15.26,2.06,23.55-1.07,24.81-10.38.9-6.74-2.7-11.46-16.72-16.78l-15.55-5.93c-23.23-8.77-32.19-21.68-29.47-41.9,3.65-27.15,24.54-38.47,57.25-34.07,15,2,28.28,6.73,37.09,13.13a4.4,4.4,0,0,1,1.75,4.17L426.9,81.25a4.45,4.45,0,0,1-7.09,3,70.45,70.45,0,0,0-32.55-12.83c-14.67-2-22.56,1.21-23.73,9.93-.91,6.74,3.2,10.72,17.24,15.84l16.14,6c22.87,8.53,31.23,21.36,28.41,42.37-3.84,28.54-24.09,39.54-58,35-17.57-2.36-32.76-8.09-42.33-15.61A4.45,4.45,0,0,1,323.37,160.79Z"
+                    />
+                  </g>
+                </g></svg
+            ></a>
+          </li>
+          <!-- COTTONON BODY -->
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link"
+              ><svg
+                class="footer__nav--img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 522.71 181.47"
+              >
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      class="cls-1"
+                      d="M230.44,17.14c0,5.18-3.24,8.64-8.13,8.64s-8.13-3.46-8.13-8.64,3.24-8.63,8.13-8.63S230.44,12,230.44,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M204,0V34.28h66.9V0Zm18.27,31.55c-8.59,0-14.62-6-14.62-14.41s6-14.4,14.62-14.4,14.62,6,14.62,14.4S230.9,31.55,222.31,31.55ZM265.65,31h-6l-12.34-18.2V31h-6V3.24h6.32l12,17.69V3.24h6Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M.66,17.14C.66,7.07,7.78,0,18.4,0c3.36,0,6.77.7,8.83,2V9.47A14.61,14.61,0,0,0,19,7C12.39,7,8.38,10.88,8.38,17.14s4,10.13,10.58,10.13a14.62,14.62,0,0,0,8.27-2.46v7.47c-2.06,1.3-5.47,2-8.83,2C7.78,34.28.66,27.22.66,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M30.88,17.14C30.88,7.12,38.05,0,48.28,0S65.67,7.12,65.67,17.14,58.5,34.28,48.28,34.28,30.88,27.17,30.88,17.14Zm27.07,0C58,11,54.09,6.87,48.28,6.87S38.6,11,38.6,17.14s3.86,10.28,9.68,10.28S58,23.31,58,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M77,7.37H67V.6H94.54V7.37H84.46V33.68H77Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M107,7.37H97V.6h27.57V7.37H114.49V33.68H107Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M125.86,17.14C125.86,7.12,133,0,143.26,0s17.39,7.12,17.39,17.14-7.17,17.14-17.39,17.14S125.86,27.17,125.86,17.14Zm27.07,0c0-6.16-3.86-10.27-9.67-10.27s-9.68,4.11-9.68,10.27,3.86,10.28,9.68,10.28S152.93,23.31,152.93,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M165.86.6h7.52l14.28,21V.6h7.17V33.68h-7.12L173,12V33.68h-7.17Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M0,50.3a3.23,3.23,0,0,1,3.23-3.23h53c28.6,0,43.4,11.4,43.4,34,0,14-5.8,23.2-17.4,27.8v.4c15.8,4.6,23.8,16,23.8,33.2,0,24-15.2,36.6-44.4,36.6H3.23A3.22,3.22,0,0,1,0,175.85Zm55.4,53.37c19.2,0,27.2-6,27.2-20.6s-8-20.4-28-20.4H20.23A3.23,3.23,0,0,0,17,65.9v34.55a3.22,3.22,0,0,0,3.23,3.22Zm3.6,59.8c21,0,29.6-6.6,29.6-22,0-15.8-9-22.2-31.6-22.2H20.23A3.23,3.23,0,0,0,17,122.5v37.75a3.22,3.22,0,0,0,3.23,3.22Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M126.2,113.07c0-40.2,28-68.4,68.4-68.4s68.4,28.2,68.4,68.4-28,68.4-68.4,68.4S126.2,153.27,126.2,113.07Zm119.4,0c0-31.2-20.6-52.6-51-52.6s-51,21.4-51,52.6,20.6,52.6,51,52.6S245.6,144.27,245.6,113.07Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M292,50.3a3.23,3.23,0,0,1,3.22-3.23H334c46,0,71.79,24,71.79,66s-25.79,66-71.79,66H295.22a3.22,3.22,0,0,1-3.22-3.22Zm41.8,113.17c35.79,0,54.59-17.4,54.59-50.4s-18.8-50.4-54.59-50.4H312.22A3.23,3.23,0,0,0,309,65.9v94.35a3.22,3.22,0,0,0,3.22,3.22Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M475.2,121.67v54.18a3.23,3.23,0,0,1-3.23,3.22H461.42a3.22,3.22,0,0,1-3.22-3.22v-54a3.21,3.21,0,0,0-.57-1.82L411.24,52.12a3.23,3.23,0,0,1,2.67-5h12.58a3.23,3.23,0,0,1,2.67,1.41L464.33,100a3.22,3.22,0,0,0,5.33,0l35.17-51.49a3.25,3.25,0,0,1,2.67-1.41h12a3.24,3.24,0,0,1,2.67,5.06l-46.38,67.72A3.2,3.2,0,0,0,475.2,121.67Z"
+                    />
+                  </g>
+                </g></svg
+            ></a>
+          </li>
+          <!-- COTTONON LOST -->
+          <li class="footer__nav--item">
+            <a href="" class="footer__nav--link"
+              ><svg
+                class="footer__nav--img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 449.92 181.41"
+              >
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      class="cls-1"
+                      d="M105.68,112.94c0-22.59,15.73-38.44,38.44-38.44s38.44,15.85,38.44,38.44-15.74,38.45-38.44,38.45S105.68,135.54,105.68,112.94Zm67.1,0c0-17.53-11.58-29.56-28.66-29.56s-28.66,12-28.66,29.56,11.57,29.57,28.66,29.57S172.78,130.48,172.78,112.94Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M229.78,17.14c0,5.18-3.24,8.63-8.13,8.63s-8.13-3.45-8.13-8.63,3.24-8.64,8.13-8.64S229.78,12,229.78,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M203.38,0V34.28h66.9V0Zm18.27,31.55c-8.59,0-14.62-6-14.62-14.41s6-14.41,14.62-14.41,14.62,6,14.62,14.41S230.24,31.55,221.65,31.55ZM265,31h-6l-12.34-18.2V31h-6V3.24H247l12,17.69V3.24h6Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M0,17.14C0,7.07,7.12,0,17.74,0c3.36,0,6.77.7,8.82,2V9.47A14.57,14.57,0,0,0,18.29,7C11.73,7,7.72,10.88,7.72,17.14s4,10.13,10.57,10.13a14.58,14.58,0,0,0,8.27-2.46v7.47c-2,1.3-5.46,2-8.82,2C7.12,34.28,0,27.22,0,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M30.22,17.14C30.22,7.12,37.39,0,47.62,0S65,7.12,65,17.14,57.84,34.28,47.62,34.28,30.22,27.17,30.22,17.14Zm27.07,0c0-6.16-3.86-10.27-9.67-10.27S37.94,11,37.94,17.14s3.86,10.28,9.68,10.28S57.29,23.31,57.29,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M76.34,7.37h-10V.6H93.88V7.37H83.8V33.68H76.34Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M106.36,7.37h-10V.6H123.9V7.37H113.83V33.68h-7.47Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M125.2,17.14c0-10,7.17-17.14,17.4-17.14S160,7.12,160,17.14s-7.17,17.14-17.39,17.14S125.2,27.17,125.2,17.14Zm27.07,0c0-6.16-3.86-10.27-9.67-10.27s-9.68,4.11-9.68,10.27,3.86,10.28,9.68,10.28S152.27,23.31,152.27,17.14Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M165.2.6h7.52l14.28,21V.6h7.17V33.68h-7.12L172.37,12V33.68H165.2Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M1.52,47.07h14A1.53,1.53,0,0,1,17,48.59V161.75a1.52,1.52,0,0,0,1.52,1.52H88.88a1.52,1.52,0,0,1,1.52,1.52v12.76a1.52,1.52,0,0,1-1.52,1.52H1.52A1.52,1.52,0,0,1,0,177.55v-129A1.53,1.53,0,0,1,1.52,47.07Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M223.44,167.29V152.36a1.51,1.51,0,0,1,2.49-1.15c11.17,9.23,27.21,14.4,44.11,14.4,21.8,0,33.8-8.4,33.8-22.6,0-11.2-7.6-18-25.8-21.8l-20.6-4.4c-24.2-5.2-33.6-17.8-33.6-34.4,0-23.39,18.4-37.8,49.8-37.8,16.23,0,31.12,3.83,40,10.54a1.53,1.53,0,0,1,.6,1.22V70.75a1.53,1.53,0,0,1-2.48,1.18c-9.62-7.47-23.64-11.52-38.32-11.52-20.6,0-32.2,8-32.2,21.2,0,9.8,6.4,16.2,24.8,20l21,4.4c24,5,34.2,17.8,34.2,36.2,0,25-18.6,39.2-51.2,39.2-18.66,0-35.78-4.63-46.05-12.94A1.53,1.53,0,0,1,223.44,167.29Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M386.2,62.81H344a1.52,1.52,0,0,1-1.52-1.52V48.54A1.52,1.52,0,0,1,344,47H448.4a1.52,1.52,0,0,1,1.52,1.52V61.29a1.52,1.52,0,0,1-1.52,1.52H406.24a1.53,1.53,0,0,0-1.52,1.53V177.49A1.52,1.52,0,0,1,403.2,179h-14a1.52,1.52,0,0,1-1.52-1.52V64.34A1.53,1.53,0,0,0,386.2,62.81Z"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M212.36,113.67l-18.74,18.75a.51.51,0,0,1-.2.12l-13.8,4.6a.53.53,0,0,1-.54-.88l18.4-18.4a.53.53,0,0,0-.38-.9l-48.68-.14a.52.52,0,0,0-.54.53l-.14,48.4a.53.53,0,0,0,.91.37L166.8,148a.53.53,0,0,1,.88.55l-4.6,13.79a.57.57,0,0,1-.13.21l-13.77,13.77-5,5a.53.53,0,0,1-.75,0l-18.74-18.74a.46.46,0,0,1-.13-.21L120,148.52a.53.53,0,0,1,.88-.55l18.4,18.4a.52.52,0,0,0,.9-.37l.15-48.69a.53.53,0,0,0-.53-.53l-48.4-.14a.52.52,0,0,0-.38.9l18.15,18.15a.53.53,0,0,1-.54.88L94.82,132a.55.55,0,0,1-.21-.12L80.85,118.08l-5-5a.56.56,0,0,1,0-.76L94.61,93.61a.57.57,0,0,1,.21-.13l13.8-4.6a.53.53,0,0,1,.54.88l-18.4,18.4a.53.53,0,0,0,.37.91l48.69.15a.53.53,0,0,0,.53-.53l.15-48.41a.53.53,0,0,0-.91-.37L121.44,78.06a.53.53,0,0,1-.88-.55l4.6-13.79a.57.57,0,0,1,.13-.21L144,44.77a.53.53,0,0,1,.75,0l18.74,18.74a.57.57,0,0,1,.13.21l4.6,13.79a.53.53,0,0,1-.88.55L149,59.66a.53.53,0,0,0-.91.37l-.14,48.69a.53.53,0,0,0,.53.53l48.4.14a.53.53,0,0,0,.38-.9L179.08,90.33a.53.53,0,0,1,.54-.88l13.8,4.6a.53.53,0,0,1,.2.13L207.39,108l5,5A.53.53,0,0,1,212.36,113.67Z"
+                    />
+                  </g>
+                </g></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
