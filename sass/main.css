@@ -200,10 +200,13 @@ body {
   }
   .navigation__list--list {
     position: fixed;
-    right: 0px;
-    height: 84vh;
-    width: 100%;
-    top: 16vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+    top: 0;
+    overflow-x: hidden;
     background-color: #ea3232;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -241,9 +244,13 @@ body {
   display: none;
 }
 
+.under-nav__search--btn-btn {
+  display: none;
+}
+
 .open .navigation__list--list {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .open .navigation__list--link {
@@ -264,6 +271,15 @@ body {
   -webkit-transform: translateX(5rem);
           transform: translateX(5rem);
   opacity: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .under-nav__search--bar {
+    display: block;
+  }
+  .under-nav__search--btn-btn {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -320,6 +336,11 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .arrivals {
+    background-image: url(../img/new-arrivals-backup.jpg);
+    background-position: top;
+    background-size: cover;
+  }
   .arrivals__text {
     font-size: 2rem;
   }
@@ -413,6 +434,12 @@ body {
   .shop__card {
     width: 20vw;
     height: 55vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .shop__text {
+    font-size: 2rem;
   }
 }
 

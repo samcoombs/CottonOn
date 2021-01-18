@@ -36,6 +36,9 @@
 
 @media screen and (max-width: $phone) {
   .arrivals {
+    background-image: url(../img/new-arrivals-backup.jpg);
+    background-position: top;
+    background-size: cover;
     &__text {
       font-size: 2rem;
     }

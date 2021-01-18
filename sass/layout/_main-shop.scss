@@ -79,3 +79,11 @@
     }
   }
 }
+
+@media screen and (max-width: $phone) {
+  .shop {
+    &__text {
+      font-size: 2rem;
+    }
+  }
+}

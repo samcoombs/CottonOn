@@ -159,10 +159,14 @@
       }
       &--list {
         position: fixed;
-        right: 0px;
-        height: 84vh;
-        width: 100%;
-        top: 16vh;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 16vh;
+        padding-bottom: 16vh;
+        top: 0;
+        // top: 0;
+        overflow-x: hidden;
         background-color: $color-primary;
         flex-direction: column;
         align-items: center;
@@ -196,6 +200,11 @@
     &--bar {
       display: none;
     }
+    &--btn {
+      &-btn {
+        display: none;
+      }
+    }
   }
 }
 
@@ -203,7 +212,7 @@
   .navigation {
     &__list {
       &--list {
-        transform: translateX(0%);
+        transform: translateX(0);
       }
       &--link {
         opacity: 1;
@@ -221,6 +230,21 @@
       &--2 {
         transform: translateX(5rem);
         opacity: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .under-nav {
+    &__search {
+      &--bar {
+        display: block;
+      }
+      &--btn {
+        &-btn {
+          display: block;
+        }
       }
     }
   }
